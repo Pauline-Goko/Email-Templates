@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Successful</title>
+    <script src="https://kit.fontawesome.com/d3d5176223.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F3BEBE;
+        color: #333;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #F53633;
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .highlight {
+        color: #D9534F;
+      }
+      .header {
+        text-align: center; /* Align the logo to the center */
+      }
+      .logo {
+        width: 100px; /* Adjust the size of the logo as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+      }
+      .icon {
+        color: #F53633; /* Darker shade of red for the icon */
+        font-size: 50px; /* Larger icon size */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="header">
+      <img src="images/logo.jpeg" alt="Logo" class="logo">
+    </div>
+    <i class="fa-solid fa-circle-check icon"></i>
+      <h1>Payment Successful!</h1>
+      <p>Hi <%= firstName %> <%= lastName %>,</p>
+      <p>
+        We are pleased to inform you that your payment was successful. Your
+        subscription plan has been renewed.
+      </p>
+      <p><strong>Plan:</strong> <%= planName %></p>
+      <p><strong>Amount Paid:</strong> <%= amountPaid %></p>
+      <p><strong>Next Billing Date:</strong> <%= nextBillingDate %></p>
+      <p>Thank you for your continued support.</p>
+      <p class="highlight">
+        If you have any questions, please feel free to
+        <a href="mailto:info@travelpersona.co">contact</a> our support team.
+      </p>
+      <div class="footer">
+        <p>
+          Travel Persona
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

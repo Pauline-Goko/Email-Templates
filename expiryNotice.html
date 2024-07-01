@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plan Expiry Notice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #F3BEBE;
+        color: #721C24;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+      }
+      .header h1 {
+        font-size: 24px;
+        color: #F53633;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 14px;
+        color: #888888;
+      }
+      .button {
+        display:inline-block;
+        text-align: center;
+        margin: 20px 70px;
+        width: 400px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #F53633;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #9A1515;
+      }
+      .header {
+        text-align: center; /* Align the logo to the center */
+      }
+      .logo {
+        width: 100px; /* Adjust the size of the logo as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+      <img src="images/logo.jpeg" alt="Logo" class="logo">
+      </div>
+      <div class="header">
+        <h1>Plan Expiry Notice</h1>
+      </div>
+      <div class="content">
+        <p>Dear <%= firstName %> <%= lastName %>,</p>
+        <p>
+          We wanted to inform you that your current plan is set to expire on
+          <strong><%= expiryDate %></strong>.
+        </p>
+        <p>
+          To avoid any interruptions to your service, please make sure to renew
+          your plan before the expiry date.
+        </p>
+        <a href="<%= renewalLink %>" class="button">Renew Now</a>
+      </div>
+      <div class="footer">
+        <p>
+          If you have any questions or need assistance, please contact our
+          support team.
+        </p>
+        <p>
+       Travel Persona
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

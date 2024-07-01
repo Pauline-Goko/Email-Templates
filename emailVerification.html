@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Verification</title>
+    <style>
+      body {
+        background-color: #F3BEBE; /* Faded red background */
+        font-family: Arial, sans-serif;
+        color: #333333;
+        padding: 20px;
+        margin: 0;
+      }
+      h1 {
+        color: #F53633; /* Darker shade of red for the heading */
+        font-size: 24px; /* Smaller heading font size */
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #FFFFFF; /* White background for the container */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Center align all contents inside the container */
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666666
+    }
+      .cta-container {
+        text-align: center; /* Center align the button */
+      }
+      .cta {
+        display: inline-block; /* Ensure button width fits content */
+        margin: 20px auto;
+        padding: 10px 20px;
+        width: 400px;
+        background-color: #F53633; /* Darker shade of red for the button */
+        color: #FFFFFF;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .cta:hover {
+        background-color: #7A0707; /* Slightly lighter shade on hover */
+      }
+      .icon {
+        width: 90px; /* Set a fixed width for the icon */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Make it a block element */
+        margin: 0 auto 20px; /* Center align and add margin at the bottom */
+      }
+      .header {
+        text-align: center; /* Align the logo to the center */
+      }
+      .logo {
+        width: 100px; /* Adjust the size of the logo as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="images/logo.jpeg" alt="Logo" class="logo">
+      </div>
+      <img src="images/email-icon.png" alt="Email Icon" class="icon">
+      <h1>Please verify your email</h1>
+      <p>Hi <%= firstName %> <%= lastName %>,</p>
+      <p>
+        Welcome to Travel Persona! Click the button below to verify your
+        email address and activate your account.
+      </p>
+      <p>This link is valid for 1 hour.</p>
+      <div class="cta-container">
+        <a href="<%= verificationLink %>" class="cta">Verify Email</a>
+      </div>
+      <p>If you have not registered with us, please ignore this email.</p>
+      <div class="footer">
+        <p>Travel Persona</p>
+      </div>
+    </div>
+  </body>
+</html>
